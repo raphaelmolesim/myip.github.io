@@ -1,0 +1,13 @@
+GEM
+  specs:
+    erb (6.0.0)
+
+PLATFORMS
+  ruby
+  x86_64-linux
+
+DEPENDENCIES
+  erb
+
+BUNDLED WITH
+   2.7.2
