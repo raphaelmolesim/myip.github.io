@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+ROOT_PATH="/home/raphaelmolesim/Projects/myip.github.io"
+
+source ${ROOT_PATH}/../../.bash_profile
+
+ruby ${ROOT_PATH}/render.rb > ${ROOT_PATH}/tmp/last-run.log

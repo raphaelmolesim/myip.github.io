@@ -6,10 +6,10 @@ template = File.read("index.html.erb")
 # Render the ERB
 renderer = ERB.new(template)
 
-ip_address = "new_ip" # `curl https://ipinfo.io/ip`
+ip_address = `curl https://ipinfo.io/ip`
 
 current_index = File.read("index.html")
-#return if current_index.include?(ip_address)
+return if current_index.include?(ip_address)
 
 context = binding
 output = renderer.result(context)
